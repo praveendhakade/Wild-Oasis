@@ -6,3 +6,5 @@ Built with React Router, Tanstack React Query and Supabase.
 
 Visit the app here:
 https://the-wild-oasis-pd.netlify.app/
+
+Third party libraries used: react-hot-toast, date-fns
