@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 import { useCheckout } from "../check-in-out/hooks/useCheckout";
 import Modal from "../../ui/Modal";
 import ConfirmDelete from "../../ui/ConfirmDelete";
-import { useDeleteBooking } from "./hooks/useDeletebooking";
+import { useDeleteBooking } from "./hooks/useDeletebooking.js";
 import Empty from "../../ui/Empty";
 
 const HeadingGroup = styled.div`
@@ -30,7 +30,7 @@ function BookingDetail() {
   const navigate = useNavigate();
   const moveBack = useMoveBack();
   const {checkout, isCheckinOut} = useCheckout()
-  const { isDeleting, deleteBooking} = useDeleteBooking();
+  const {isDeleting, deleteBooking} = useDeleteBooking();
 
   if (isLoading) return <Spinner />;
   if (!booking) return <Empty resourceName="Booking" />;
