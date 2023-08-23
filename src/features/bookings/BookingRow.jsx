@@ -20,7 +20,7 @@ import { useNavigate } from "react-router-dom";
 import { useCheckout } from "../check-in-out/hooks/useCheckout";
 import Modal from "../../ui/Modal";
 import ConfirmDelete from "../../ui/ConfirmDelete";
-import { useDeleteBooking } from "./hooks/usedeletebooking";
+import { useDeleteBooking } from "./hooks/useDeleteBooking";
 
 const Cabin = styled.div`
   font-size: 1.6rem;
